@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="button">
+    <button onclick="movieNumber(0)" id="movie1"> Frozen </button>
+    <button onclick="movieNumber(1)" id="movie2"> About Time </button>
+    <button onclick="movieNumber(2)" id="movie3"> Our Times </button>
+    </div>
+
+    <h1 id="title"> </h1>
+    <ul>
+        <li id="year"> </li>
+        <li id="genre"> </li>
+    </ul>
+
+    <script>
+        let movie = [{title: "Frozen", year: 2014, genre: "Animation"}, {title: "About Time", year: 2013, genre: "Romance"}, {title: "Our Times", year: 2015, genre: "Romance"}];
+        
+        // class로 하면 작동안함, getElements에서 끝s로 무한삽질주의 
+        const movieNumber = (num) => {
+            let movietitle = document.getElementById("title");
+            let movieyear = document.getElementById("year");
+            let moviegenre = document.getElementById("genre");
+            movietitle.innerHTML = movie[num].title;
+            movieyear.innerHTML = movie[num].year;
+            moviegenre.innerHTML = movie[num].genre;            
+        };
+    </script>
+</body>
+</html>
