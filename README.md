@@ -1,2 +1,2 @@
-# javascriptStudy
+# javascript
 Mogakko javascript study
