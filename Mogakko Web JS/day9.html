@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>MOVIE LIST</title>
 </head>
-<body>
+<body style="margin-left: 40%; margin-top: 300px;">
     <div class="button">
     <button onclick="movieNumber(0)" id="movie1"> Frozen </button>
     <button onclick="movieNumber(1)" id="movie2"> About Time </button>
@@ -12,7 +12,7 @@
     </div>
 
     <h1 id="title"> </h1>
-    <ul>
+    <ul style="list-style-type: circle;">
         <li id="year"> </li>
         <li id="genre"> </li>
     </ul>
@@ -20,7 +20,6 @@
     <script>
         let movie = [{title: "Frozen", year: 2014, genre: "Animation"}, {title: "About Time", year: 2013, genre: "Romance"}, {title: "Our Times", year: 2015, genre: "Romance"}];
         
-        // class로 하면 작동안함, getElements에서 끝s로 무한삽질주의 
         const movieNumber = (num) => {
             let movietitle = document.getElementById("title");
             let movieyear = document.getElementById("year");

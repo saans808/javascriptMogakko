@@ -2,55 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>BILLBOARD</title>
     </head>
-    <body>
+    <body style="text-align: center; margin-top: 300px;">
         <button onclick="colorText()">
             click the button
         </button>
         <h1></h1>
         <script>
-            /* Failed randomColor trial
-            var name = 'saans808';
-            var i = 0;
-            var h1 = document.getElementsByTagName('h1');
-            var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-
-            function colorText() {
-                const setT = () => {
-                const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-                document.h1.style.color = "#" + randomColor;
-                } 
-                // https://css-tricks.com/snippets/javascript/random-hex-color/
-
-                if (i < name.length) {
-                    h1[0].innerHTML += name[i];
-                    document.addEventListener("click", setT);
-                    i++;
-                    setT();
-
-                } 
-            } */
-
-            /*failed
-            var name = 'saans808';
-            var i = 0;
-            var h1 = document.getElementsByTagName('h1');
-
-            function randomColors(){
-                return '#' + Math.floor(Math.random() * 16777215).toString(16);
-                document.getElementsByTagName(button).style.colorText = "#" + randomColor;
-            }
-
-            function colorText() {
-                if (i < name.length) {
-                    h1[0].innerHTML += name[i];
-                    h1[0].style.colors = randomColors();
-                    i++;
-
-                } 
-            } */
-
             var name = 'saans808';
             var i = 0;
             var h1 = document.getElementsByTagName('h1');
@@ -60,7 +19,6 @@
                 if (i < name.length) {
                     h1[0].innerHTML += name[i];
                     h1[0].style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
-                    // color에 s 붙이고 삽질하고 있었다
                     i++;
 
                 } else {
