@@ -1,0 +1,49 @@
+#title, h4{
+    text-align: center;
+}
+#title{
+    font-size: 3em;
+}
+hr{
+    width: 400px;
+    border-bottom: 0px;
+}
+h4{
+    margin: 10;
+    font-weight: normal;
+}
+.lang1{
+    text-align: left;
+    margin-left: 6em;
+    margin-top: 40px;
+    float: left;
+    
+}
+.lang1open{
+    margin-top: 75px;;
+    margin-left: 25em;
+
+}
+.jsList{
+    margin-left: 24em;
+    list-style: circle;
+}
+
+li{
+    margin: 0 0 8px 0;
+    padding: 0 0 0 0;
+    border: 0;
+   
+}
+.powered {
+    font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 10px;
+  }
+
+  a{
+    text-decoration-line: none;
+    font-weight: bold;
+  }
