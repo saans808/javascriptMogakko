@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHONECALL</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        button {
+                border: none;
+                border-radius: 20px;
+                padding: 30px;
+                width: 250px;
+                background-color: green;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body style="text-align: center; margin-top: 300px;">
+    <h1>  </h1> <br> <br>
+    <button id="clickMe"> Let's call </button>
+    <script>       
+    var h1 = document.getElementsByTagName('h1');
+        function onClick() {
+            h1[0].innerHTML = "김산스"
+            document.getElementById('clickMe').innerHTML = "010-xxxx-xxxx";       
+        }
+
+        function click_call(){
+            setTimeout(onClick, 1000);
+        }
+        
+        document.getElementById('clickMe').addEventListener('click', click_call);    
+    </script>
+</body>
+</html>
