@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>TalkingJR</title>
@@ -11,7 +11,7 @@
             .box {
                 border: 2px solid;
                 padding: 8rem;
-                margin: 5% 20% 1% 20%;
+                margin: 6% 20% 1% 20%;
                 border-radius: 10px;
                 font-size: 2rem;
             }
@@ -35,20 +35,39 @@
                 font-size: 30px;
                 letter-spacing: 2px;
             }
-
         </style>
     </head>
-
     <body>
         <div>
             <div class="box"> hello </div>
             <img src="photo.png" alt="image" width="200px">
             <br>
-            <input type="text" class="textbox">   
+            <input type="text" id="console" class="textbox">   
             <br>
-            <button> TALK </button>
+            <button onclick="checkText()"> TALK </button>
         </div>
+        <script>
+            function checkText() {
+                var value = document.getElementById('console').value;  // class로 하면 undefined 뜬다
+                
+                var buttonClickErase = document.getElementsByClassName('textbox');
+                //버튼을 누르면 쓴 글이 사라짐
+                for (var i=0; i< buttonClickErase.length; i++){
+                    buttonClickErase[i].value='';
+                }
 
+                if (value == "") {
+                    console.log("으쌰으쌰");
+                }
+                else if (value == "안녕"){
+                    console.log("반가워");
+                } else if (value == "뭐해") {
+                    console.log("난 버피테스트를 하고 있어");
+                } 
+                else if (value == "갈게") {
+                    console.log("잘가 좋은 하루 보내");
+                }
+            }
+        </script>
     </body>
-
 </html>
