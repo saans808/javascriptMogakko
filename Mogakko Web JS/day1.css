@@ -5,7 +5,7 @@
 .answer {
     border: 2px solid;
     padding: 8rem;
-    margin: 6% 20% 1% 20%;
+    margin: 15px 20% 1% 20%;
     border-radius: 10px;
     font-size: 2rem;
 }
@@ -38,4 +38,8 @@
 .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#typed{
+    padding-top: 90px;
 }
