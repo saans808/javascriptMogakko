@@ -3,7 +3,7 @@
 }
 
 .answer {
-    border: 2px solid;
+    border: 3px solid;
     padding: 8rem;
     margin: 15px 20% 1% 20%;
     border-radius: 10px;
@@ -12,7 +12,7 @@
 
 .textbox {
     width: 25em;
-    border: 2px solid;
+    border: 3px solid;
     padding: 5px;
     margin: 3% 10% 3% 10%;
     color: #696eff;
