@@ -34,7 +34,7 @@ function checkText() {
     else if (value == "안녕"){
         answer[0].innerHTML = "반가워";
     } else if (value == "뭐해") {
-        answer[0].innerHTML = "난 버피테스트를<br>하고 있어";
+        answer[0].innerHTML = "난 버피테스트를 하고 있어";
     } 
     else if (value == "갈게") {
         answer[0].innerHTML = "잘가 좋은 하루 보내"; 
@@ -58,7 +58,7 @@ function checkText() {
                 .deleteAll()   //커서 사라지게 하는 법 못찾음
                             
         } else if (n == 1) {            
-            answer[0].innerHTML = "날 못 볼까봐<br>손전등을 켰어";
+            answer[0].innerHTML = "날 못 볼까봐 손전등을 켰어";
             document.getElementById("bodyColor").style.backgroundColor = "#424242";
             document.getElementById("answerL").style.color = "#ffffff"; //class로 하니까 안됨
             n++;
@@ -72,7 +72,7 @@ function checkText() {
         document.getElementById("answerL").style.color = "#000000";
         n = 1; // 불을 켰다 끌 때 n == 1로 돌아감 
     } else {
-        answer[0].innerHTML = "그 말은 아직<br>못배웠어";  
+        answer[0].innerHTML = "그 말은 아직 못배웠어";  
 
     }
 }
