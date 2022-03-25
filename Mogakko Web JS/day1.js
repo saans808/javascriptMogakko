@@ -43,7 +43,7 @@ function checkText() {
         .pauseFor(300)
         .typeString('놀아줘서 고마워요')
         .pauseFor(3000);    
-    } else if (value.includes("불꺼")) {     // 반복문과 중첩 안되는것인가
+    } else if (value.includes("불꺼")) {
         if (n == 0) {
             answer[0].innerHTML = "무슨 말 했어?";       
             n++;     
@@ -55,8 +55,7 @@ function checkText() {
                 .deleteAll()
                 .typeString('다시 한 번 말해보자')
                 .pauseFor(1000)
-                .deleteAll()
-                .hide();       //커서 사라지게 하는 법 못찾음
+                .deleteAll()   //커서 사라지게 하는 법 못찾음
                             
         } else if (n == 1) {            
             answer[0].innerHTML = "날 못 볼까봐<br>손전등을 켰어";
