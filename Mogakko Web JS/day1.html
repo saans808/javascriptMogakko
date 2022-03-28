@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>TalkingJR</title>
+        
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> 
         <link rel="stylesheet" href="./day1.css">
     </head>
@@ -12,7 +13,7 @@
             <div id="answerL" class="answer"> Click 'TALK' </div>
             <img src="photo.png" alt="image" width="200px">
             <br>
-            <input type="text" id="talkbox" class="textbox">   
+            <input type="text" id="talkbox" class="textbox" onkeyup="enter()">   
             <br>
             <button class="btn" onclick="checkText()"> TALK </button>
         </div>
@@ -20,4 +21,6 @@
         <script src=""></script>
     </body>
 </html>
+
+
 
